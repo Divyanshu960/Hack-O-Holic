@@ -1,5 +1,5 @@
 # Hack-O-Holic
-##Application security for Aadhar Portal
+## Application security for Aadhar Portal
 
 All credentials like passwords and such are hashed using SHA256 encryption/decryption.
 
