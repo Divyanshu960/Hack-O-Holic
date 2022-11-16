@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollateralSpace | Edit Profile</title>
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+        <!-- Header Code -->
+        <div class="header">
+            <div class="titleholder">
+                <h1>COLLATERAL SPACE</h1>
+            </div>
+            <div style="display: flex;">
+                <div class="buttonholder">
+                    <button class="btnn">Home</button>
+                </div>
+                <div class="buttonholder">
+                    <button class="btnn">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="background">
+            <div class="homewrapper">
+                <div class="imagelogo">
+                    <img src="logo.png" alt="logo">
+                </div>
+                <div class="title">
+                    AADHAR PROFILE
+                </div>
+                <table class="GeneratedTable">
+                    <tbody>
+                        <tr>
+                            <td>Photo</td>
+                            <td>
+                                <div class="table_containers">
+                                    <img src="assets\pic.jpg" alt="logo">
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Uid  :</td>
+                            <td>
+                            
+                                <div class ="table_containers">
+                                    <label>2222 1111 3333 </label>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Name  :</td>
+                            <td>
+                                <div class ="table_containers">
+                                    <label>Rajesh mittal</label>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email  :</td>
+                            <td>
+                                <div class ="table_containers">
+                                    <label>rajesh@gmail.com</label>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number  :</td>
+                            <td>
+                                <div class ="table_containers">
+                                    <label>4132514251</label>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date-of-birth  :</td>
+                            <td>
+                                <div class ="table_containers">
+                                    <label>15/13/01</label>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gender  :</td>
+                            <td>
+                                <div class ="table_containers">
+                                    <label>Male</label>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Address  :</td>
+                            <td>
+                                <div class ="table_containers">
+                                    <label>D646 mohanvihar,deheradun,uttrakhand,india</label>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postal Code  :</td>
+                            <td>
+                                <div class ="table_containers">
+                                    <label>248001</label>
+                            </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <script>
+                    function check()
+                    {
+                        var f = document.getElementById("loginform");
+            
+                        if(confirm('Do you want to see PF share?'))
+                        {
+            
+                            f.setAttribute('action',"otp1.html");
+                        }
+                        else
+                        {   
+            
+                            f.setAttribute('action',"home.html");
+                        }
+                        return true;
+                    }
+                </script>
+                    <form onsubmit="return check()" class="inputfield" id="loginform">
+                <div>
+                    <input type="submit" value="UPDATE" class="btn">
+                </div>
+            </form>
+            </div>
+            
+        </div>
+    </main>
+</body>
+
+</html>

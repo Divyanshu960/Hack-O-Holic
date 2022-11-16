@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollateralSpace | Edit Profile</title>
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <script>
+        function check()
+        {
+            var f = document.getElementById("loginform");
+
+            if(confirm('Do you want to see PF share?'))
+            {
+
+                f.setAttribute('action',"otp.html");
+            }
+            else
+            {   
+
+                f.setAttribute('action',"LoginForm.html");
+            }
+            return true;
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="titleholder">
+                <h1>COLLATERAL SPACE</h1>
+            </div>
+            <div style="display: flex;">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="background">
+            <div class="wrapper">
+                <div class="imagelogo">
+                    <img src="logo.png" alt="logo">
+
+                </div>
+
+
+                <div class="title">
+                    AADHAR LOGIN PORTAL
+                </div>
+
+
+                <form onsubmit="return check()" class="form" id="loginform" action ="login.php" method ="GET">
+                    <label>Aadhar id</label>
+                    <div class="inputfield">
+                        <input type="text" class="input" placeholder="UID " maxlength="12"name ="uid">
+                        
+                    </div>
+                    <label>Password</label>
+                    <div class="inputfield">
+                        <input type="password" class="input" placeholder="Enter Password" name = "password">
+                    </div>
+                    <label>Date of Birth</label>
+                    <div class="inputfield">
+
+                        <input type="date" class="input" name = "dob">
+                    </div>
+
+
+                    <div class="inputfield">
+                        <input type="submit" value="LOGIN" class="btn" >
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollateralSpace | Edit Profile</title>
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <script>
+        function check()
+        {
+            var f = document.getElementById("otp");
+
+            if(confirm('OTP verified!! Continue ?'))
+            {
+
+                f.setAttribute('action',"home.html");
+            }
+            else
+            {   
+
+                f.setAttribute('action',"otp.html");
+            }
+            return true;
+        }
+    </script>
+    <header>
+        <!-- Header Code -->
+        <div class="header">
+            <div class="titleholder">
+                <h1>COLLATERAL SPACE</h1>
+            </div>
+            <div style="display: flex;">
+                <div class="buttonholder">
+                    <button class="btnn">Home</button>
+                </div>
+                <div class="buttonholder">
+                    <button class="btnn">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="background">
+            <div class="wrapper">
+                <div class="imagelogo">
+                    <img src="logo.png" alt="logo">
+
+                </div>
+
+
+                <div class="title">
+                    AADHAR USER DETAILS PORTAL
+                </div>
+                <div class="form">
+                    <div class="inputfield">
+                        <label>Enter Otp</label>
+                        <input type="number" class="input" value="UID">
+                    </div>
+                <form onsubmit="return check()" id="otp">
+                <div class="inputfield">
+                        <input type="submit" value="Submit" class="btn" maxlength="8">
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
