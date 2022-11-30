@@ -10,4 +10,4 @@ In case he/she forgets the password / The 2FA will be enforced.
 GG
 Thanks to Aryan Ratra,Madhvan Bajaj and Priyanshu Rawat for their help in the project.
 
-current status: files need to be uploaded with the backend
+current status: files need to be uploaded with the backend.
